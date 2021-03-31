@@ -1,0 +1,431 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+		Spookystrap
+		</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+		<style>
+			.pos{
+				color:green;
+			}
+			.neg{
+				color:red;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<header class="container-fluid p-3" style="background:lightgrey;">
+			<div class="align-content-center">
+				<div class="row">
+					<div class="col-sm">
+						<h6>Spookystrap</h6>
+					</div>
+					<div class="col-sm">
+						<a href="#home" class="link-secondary text-decoration-none">Home</a>
+					</div>
+					<div class="col-sm">
+						<a href="#cards" class="link-secondary text-decoration-none">Spooky Cards</a>
+					</div>
+					<div class="col-sm">
+						<a href="#ourmission" class="link-secondary text-decoration-none">Our Mission</a>
+					</div>
+					<div class="col-sm">
+						<a href="#howcardswork" class="link-secondary text-decoration-none">How Cards Work</a>
+					</div>
+					<div class="col-sm">
+						<a href="#theteam" class="link-secondary text-decoration-none">Meet The Team</a>
+					</div>
+					<div class="col-sm">
+						<a href="#contactus" class="link-secondary text-decoration-none">Contact us</a>
+					</div>
+					<div class="col-sm">
+						<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						Spooky is awesome
+						</button>
+						
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+							<div class="modal-content">
+							  <div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Spooky</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							  </div>
+							  <div class="modal-body">
+								<img src="images/spookyspooky.jpg" alt="hello there" width="100%"/>
+							  </div>
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yes</button>
+								<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="container p-5 gx-5" id="home">
+			<h1>Welcome to Spookystrap</h1>
+			<p>Spookystrap is the first Bootstrap website entirely dedicated to my cat. This is how it looks with bootstrap.</p>
+			<p>Even better now that there's some more space.</p>
+			<img src="images/spooky.jpg" class="img-thumbnail" alt="just a normal spooky" width="40%"/>
+		</main>
+		<div class="container-fluid p-5" style="background:lightgrey;" id="cards">
+			<div class="row ms-0 me-0 justify-content-center">
+				<h1 class="row justify-content-center">Collect all the spooky cards!</h1>
+				<div class="col-md">
+					<div class="card">
+						<img src="images/babyspooky.jpg" class="img-fluid" alt="baby spooky"/>
+						<div class="card-body">
+							<h5 class="card-title">Baby Spooky</h5>
+							<p class="card-text">Spooky, but baby form</p>
+							<ul>
+								<li class="pos">+100 cuteness</li>
+								<li class="neg">-25 behavior</li>
+								<li class="neg">+500 energy (too much)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="card">
+						<img src="images/outdoorsspooky.jpg" class="img-fluid" alt="outdoors spooky"/>
+						<div class="card-body">
+							<h5 class="card-title">Outdoors Spooky</h5>
+							<p class="card-text">A little concerned, but brave nonetheless</p>
+							<ul>
+								<li class="pos">+10 bravery</li>
+								<li class="pos">+5 athleticism</li>
+								<li class="neg">-3 cleanliness</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="card">
+						<img src="images/badspooky.jpg" class="img-fluid" alt="mischevious spooky"/>
+						<div class="card-body">
+							<h5 class="card-title">Mischevious Spooky</h5>
+							<p class="card-text">Caught in the act!</p>
+							<ul>
+								<li class="neg">-15 trust</li>
+								<li class="neg">-3 treats</li>
+								<li class="pos">+10 run ability</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container p-5" id="ourmission">
+			<div class="row">
+				<div class="col-sm">
+					<div class="card">
+						<img src="images/bandspooky.jpg" class="img-fluid" alt="rockin' spooky"/>
+						<div class="card-body">
+							<h5 class="card-title">Rockin' Spooky</h5>
+							<p class="card-text">He'll challenege you to a battle of the bands anyday.</p>
+							<ul>
+								<li class="pos">+50 musical talent</li>
+								<li class="pos">+10 reputation</li>
+								<li class="neg">-100 hearing</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm">
+					<div>
+						<h1>Our mission</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet, nulla vitae mollis pulvinar, velit tellus molestie erat, finibus pulvinar libero ante at erat. Etiam mollis tristique egestas. Praesent nisi arcu, mollis nec egestas sed, vulputate a dolor. Pellentesque id lorem enim. Pellentesque metus nibh, semper sit amet nunc id, faucibus interdum justo. Aliquam dapibus lorem eu volutpat euismod. Nulla quis sapien in ipsum cursus aliquam non ut arcu. Curabitur ligula turpis, efficitur at tempus id, elementum at lacus. Donec nec ante maximus, pretium ligula in, hendrerit sapien. Vestibulum eget nibh at nulla lobortis aliquet at quis lorem. Maecenas faucibus tempor ante non fermentum. Integer fringilla dui arcu, maximus congue purus dictum ac.
+						Etiam finibus vestibulum leo, non elementum nisi luctus in. Pellentesque sagittis augue massa, at rutrum nisl ornare vel. Duis convallis bibendum nisl, ac ultrices est. Morbi metus ante, fermentum sed ultricies quis, bibendum sit amet dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc sollicitudin ex et ex posuere, et semper turpis tristique. Quisque at efficitur leo. Maecenas eu felis mauris. Duis pharetra imperdiet eleifend.</p>
+						<h1 class="display-6">Are you convinced this is the best thing in the world?</h1>
+						<button type="button" class="btn btn-primary">Yes!</button>
+						<button type="button" class="btn btn-outline-primary">Of course!</button>
+						<button type="button" class="btn btn-outline-secondary">I already was!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr/>
+		<div class="container p-5" id="howcardswork">
+			<div class="row justify-content-center">
+				<div class="col-sm">
+					<h1>How the cards work</h1>
+					<div class="accordion" id="accordionExample">
+					  <div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+						  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							Find 'em!
+						  </button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						  <div class="accordion-body">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet, nulla vitae mollis pulvinar, velit tellus molestie erat, finibus pulvinar libero ante at erat. Etiam mollis tristique egestas.
+						  </div>
+						</div>
+					  </div>
+					  <div class="accordion-item">
+						<h2 class="accordion-header" id="headingTwo">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Open 'em!
+						  </button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+						  <div class="accordion-body">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet, nulla vitae mollis pulvinar, velit tellus molestie erat, finibus pulvinar libero ante at erat. Etiam mollis tristique egestas.
+						  </div>
+						</div>
+					  </div>
+					  <div class="accordion-item">
+						<h2 class="accordion-header" id="headingThree">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							Trade 'em or enjoy 'em!
+						  </button>
+						</h2>
+						<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+						  <div class="accordion-body">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet, nulla vitae mollis pulvinar, velit tellus molestie erat, finibus pulvinar libero ante at erat. Etiam mollis tristique egestas.
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm">
+					<video width="70%" height="auto" controls>
+						<source src="images/spookyvideo.mp4" alt="video of spooky">
+						If you see this, your browser doesn't support this cool video of Spooky, sorry.
+					</video>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid p-5 justify-content-center" style="background:lightgrey;" id="cards">
+			<div class="row justify-content-center">
+				<h1 class="row justify-content-center">Even more cards!</h1>
+				<div class="col-lg">
+					<div class="card">
+						<img src="images/comfyspooky.jpg" class="img-fluid" alt="comfy spooky"/>
+						<div class="card-body">
+							<h5 class="card-title">Comfy Spooky</h5>
+							<p class="card-text">Good luck moving him out of that spot</p>
+							<ul>
+								<li class="pos">+75 comfort</li>
+								<li class="pos">+25 cuteness</li>
+								<li class="neg">-50 speed</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg">
+					<div class="card">
+						<img src="images/scaredspooky.jpg" class="img-fluid" alt="scared spooky"/>
+						<div class="card-body">
+							<h5 class="card-title">Scared Spooky</h5>
+							<p class="card-text">Play this card when company comes over or the vacuum turns on</p>
+							<ul>
+								<li class="pos">+20 defense</li>
+								<li class="neg">-50 bravery</li>
+								<li class="pos">+10 weird but cute expression</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg">
+					<div class="card">
+						<img src="images/notspooky.jpg" class="img-fluid" alt="not spooky"/>
+						<div class="card-body">
+							<h5 class="card-title">Not Spooky</h5>
+							<p class="card-text">I don't know where this cat came from but I'm too afraid to tell it to go away</p>
+							<ul>
+								<li class="pos">+100 fluffyness</li>
+								<li class="pos">+20 majestic</li>
+								<li class="neg">-5 not spooky</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg">
+					<div class="card">
+						<img src="images/shoesalesmanspooky.jpg" class="img-fluid" alt="shoe salesman spooky"/>
+						<div class="card-body">
+							<h5 class="card-title">Shoe Salesman Spooky</h5>
+							<p class="card-text">So you've come to barter?</p>
+							<ul>
+								<li class="pos">+25 trading</li>
+								<li class="pos">+15 negotiation</li>
+								<li class="pos">+50 poker face</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg">
+					<div class="card">
+						<img src="images/void.jpg" class="img-fluid" alt="VOID"/>
+						<div class="card-body">
+							<h5 class="card-title">V̴̧͍̫̿͊͊̔̑̒̇̑̾̊Ǫ̷̨͕͚͓̲̠͓̲̮̭̓̌̆̿͐͛̂̍̚͜͠I̸̧̹͕̮͕̯̘̮̋̀̾̽̋̐̈́͛̉̉̚͘͝͠͝Ḑ̴̳̬͍̤͈̃̍́͘</h5>
+							<p class="card-text">???</p>
+							<ul>
+								<li>+???</li>
+								<li>+???</li>
+								<li>-???</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg">
+					<div class="card">
+						<img src="images/weirdspooky.jpg" class="img-fluid" alt="weird spooky"/>
+						<div class="card-body">
+							<h5 class="card-title">Weird Spooky</h5>
+							<p class="card-text">He knows what the ladies like</p>
+							<ul>
+								<li class="pos">+25 seduction</li>
+								<li class="pos">+10 pose</li>
+								<li class="pos">+30 flexability</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container p-5" id="theteam">
+			<div class="row">
+				<div class="col-sm">
+					<div class="row">
+						<h1 class="row justify-content-center">Meet the team</h1>
+						<p class="row justify-content-center">The best of the felines.</p>
+						<div class="col-sm">
+							<div class="card">
+								<img src="images/phasingspooky.jpg" class="img-fluid" alt="spooky"/>
+								<div class="card-body">
+									<h5 class="card-title">Spooky</h5>
+									<p class="card-text">The (non)brains of the operation...</p>
+									<button type="button" class="btn btn-primary">See LinkedIn profile</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm">
+							<div class="card">
+								<img src="images/moosh.jpg" class="img-fluid" alt="working moosh"/>
+								<div class="card-body">
+									<h5 class="card-title">Moosh</h5>
+									<p class="card-text">...and then the brawns(fluff).</p>
+									<button type="button" class="btn btn-primary">See LinkedIn profile</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm justify-content-center" id="contactus">
+					<h1 class="row justify-content-center">Contact Us</h1>
+					<p class="row justify-content-center">Questions? Comments? Feel free to contact us.</p>
+					<img src="images/workingspooky.jpg" class="img-fluid" alt="working spooky" width="50%"/>
+					<form>
+						<div class="mb-3">
+							<label for="exampleInputEmail1" class="form-label">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						</div>
+						<div class="mb-3">
+							<label for="yourmessage" class="form-label">Your message</label>
+							<textarea class="form-control" id="yourmessage"></textarea>
+						</div>
+						<div class="mb-3 form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Yes, I accept Spooky as my supreme overlord</label>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer class="container-fluid p-3" style="background:lightgrey;">
+			<div class="row justify-content-center">
+				<div class="col-sm">
+				<h6 class="row justify-content-center">Spooky</h6>
+				</div>
+				<div class="col-sm">
+				<h6 class="row justify-content-center">is</h6>
+				</div>
+				<div class="col-sm">
+				<h6 class="row justify-content-center">the</h6>
+				</div>
+				<div class="col-sm">
+				<h6 class="row justify-content-center">best</h6>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">Spooky</a>
+				</div>
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">Spooky</a>
+				</div>
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">Spooky</a>
+				</div>
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">Spooky</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">is</a>
+				</div>
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">is</a>
+				</div>
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">is</a>
+				</div>
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">is</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">the</a>
+				</div>
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">the</a>
+				</div>
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">the</a>
+				</div>
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">the</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">best</a>
+				</div>
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">best</a>
+				</div>
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">best</a>
+				</div>
+				<div class="col-sm">
+				<a href="images/spookyspooky.jpg" class="row justify-content-center">best</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+<!--
+					<div class="card">
+						<img src="images/spooky.jpg" class="img-fluid" alt=""/>
+						<div class="card-body">
+							<h5 class="card-title"></h5>
+							<p class="card-text"></p>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+-->
